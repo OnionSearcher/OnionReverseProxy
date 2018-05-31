@@ -1,0 +1,9 @@
+SocksPort 12345 IPv6Traffic PreferIPv6 KeepAliveIsolateSOCKSAuth
+ControlPort 12346
+
+DataDirectory ./ExpertBundle/Data/tmp1
+
+HiddenServiceDir ./ExpertBundle/Data/hs5
+HiddenServicePort 80 127.0.0.1:80
+HiddenServicePort 443 127.0.0.1:443
+FetchHidServDescriptors 0

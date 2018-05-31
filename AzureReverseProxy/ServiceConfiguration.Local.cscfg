@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureReverseProxy" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="5" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="WebReverseProxyWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="HiddenServicePortDests" value="1.1.1.1:80" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="" />
+      <Setting name="HiddenServiceSSLPortDests" value="1.1.1.1:443" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
